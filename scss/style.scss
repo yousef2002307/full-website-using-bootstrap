@@ -1,0 +1,75 @@
+body {
+  padding-top: 108px;
+}
+$primary: #3292a6;
+$primary-overlay: rgba(50, 146, 166, 0.6);
+.navbar {
+  box-shadow: 2px 2px 5px #3292a6;
+  opacity: 0.9;
+  .navbar-nav .nav-item {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    padding-right: 20px;
+  }
+}
+.showcase {
+  background-image: url("../img/mountains.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 600px;
+  .overlay-showcase {
+    background-color: $primary-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    z-index: 1;
+  }
+}
+#abouttheauthor .col {
+  padding-bottom: 33px;
+  border-bottom: 1px solid #ddd;
+}
+#abouttheauthor .col h5 {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.jo-accord .card-header h2 {
+  width: 20%;
+  margin: auto;
+}
+.jo-accord .btn:focus,
+.btn.focus {
+  outline: 0;
+  box-shadow: none;
+
+  border: none;
+}
+.jo-cards p.yyy {
+  padding-bottom: 24px;
+  width: 65%;
+  margin: 10px auto 54px;
+  border-bottom: 1px solid #ddd;
+}
+.jo-cards .card img {
+  margin-top: -54px;
+}
+.card-body ul li {
+  padding-right: 20px;
+  color: #fff;
+}
+.card {
+  transition: all 0.5 ease-in-out;
+}
+.card:hover {
+  background-color: $primary;
+}
+@media (max-width: 992px) {
+  .card {
+    margin-bottom: 54px;
+  }
+}
